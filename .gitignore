@@ -1,0 +1,35 @@
+# 构建产物
+*.exe
+*.pdb
+FileBatRenamer.data/
+tmp/
+
+# 签名材料（pfx 含私钥，绝不入库）
+cert/
+
+# 历史版本 exe 与旧说明
+旧版本/
+
+# 测试夹具
+verify/
+
+# 构建中间产物与历史截图，只保留 v5.1 三张
+build/*.png
+!build/ui-v51.png
+!build/ui-v51-empty.png
+!build/ui-v51-template.png
+build/*.txt
+build/mock/
+build/demo/
+
+# 本机杂项
+*.log
+
+# 开发残片（旧备份 / 拆文件草稿）
+native/*.bak*
+native/*.broken
+native/_*.txt
+
+# 旧版 PowerShell 包装构建
+build/build-exe.ps1
+build/launcher.cs
